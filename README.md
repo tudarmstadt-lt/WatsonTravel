@@ -8,10 +8,9 @@ Student project with IBM Bluemix
 - An OpenStreetMap with routing
 - Text to Speech / Speech to Text
 
-For more informations how "Travel with Watson" works you can find a [documentation](docs/Travel_With_Watson_documentation) in die docs folder.
+For more informations how "Travel with Watson" works you can find a [documentation](docs/Travel_With_Watson_documentation.pdf) in die docs folder.
 
 ###How to get started with "Travel with Watson":
 
 [Installtation instructions](docs/getting_started)
 
-You can find an installation instructions in the docs folder.
