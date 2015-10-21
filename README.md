@@ -12,4 +12,6 @@ For more informations how "Travel with Watson" works you can find a documentatio
 
 ###How to get started with "Travel with Watson":
 
+[Installtation instructions](docs/getting_started)
+
 You can find an installation instructions in the docs folder.
