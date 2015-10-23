@@ -14,6 +14,10 @@ For more informations how "Travel with Watson" works you can find a [documentati
 
 [Installtation instructions](https://github.com/tudarmstadt-lt/WatsonTravel/blob/master/docs/getting_started.md)
 
+To get all functionalities of **Travel With Watson** you nee a Google API Key that have the Places API activated. 
+
+*Hint:*You can enter your API Key in the settings menu. 
+
 ####Test it:
 
 Try **Travel With Watson** by yourself, you find an *.apk* of the latest version in the release folder.
