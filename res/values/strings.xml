@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Travel with Watson</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="title_home">Travel with Watson</string>
+    <string name="title_search">Search</string>
+    <string name="title_map">Map</string>
+    <string name="title_map_settings">Map Settings</string>
+    <string name="title_sight">Sights</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_drinkingtour">Drinking Tour</string>
+
+    <string-array name="question_icons">
+        <item>@drawable/ic_action_drink</item>
+        <item>@drawable/ic_action_sight</item>
+        <item>@drawable/ic_action_sleep</item>
+        <item>@drawable/ic_action_audio</item>
+        <item>@drawable/ic_action_restaurant</item>
+        <item>@drawable/ic_action_cafe</item>
+        <item>@drawable/ic_action_subway</item>
+        <item>@drawable/ic_action_grocery_store</item>
+        <item>@drawable/ic_action_car</item>
+        <item>@drawable/ic_action_bike</item>
+        <item>@drawable/ic_action_camera</item>
+        <item>@drawable/ic_action_brush</item>
+        <item>@drawable/ic_action_nature</item>
+        <item>@drawable/ic_action_boat</item>
+        <item>@drawable/ic_action_whats_hot</item>
+        <item>@drawable/ic_action_airport</item>
+        <item>@drawable/ic_action_city</item>
+        <item>@drawable/ic_action_palette</item>
+    </string-array>
+
+    <string-array name="region_spinner">
+        <item>baden-wuerttemberg</item>
+        <item>bayern</item>
+        <item>berlin</item>
+        <item>brandenburg</item>
+        <item>bremen</item>
+        <item>hamburg</item>
+        <item>hessen</item>
+        <item>mecklenburg-vorpommern</item>
+        <item>niedersachsen</item>
+        <item>nordrhein-westfalen</item>
+        <item>rheinland-pfalz</item>
+        <item>saarland</item>
+        <item>sachsen</item>
+        <item>sachsen-anhalt</item>
+        <item>schleswig-holstein</item>
+        <item>thueringen</item>
+    </string-array>
+
+</resources>

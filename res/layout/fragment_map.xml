@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="androidhive.info.materialdesign.activity.MapFragment">
+    <LinearLayout
+            android:id="@+id/routingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/container_with_shadow"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible">
+        <ImageView
+                android:id="@+id/close_routingContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_action_close_dark"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Start:" android:textStyle="bold"/>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:id="@+id/start_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Start address"
+                    android:inputType="text"
+                    android:textSize="14sp"/>
+            <ImageView
+                    android:id="@+id/use_current_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_navigate_arrow"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Destination:" android:textStyle="bold"/>
+        <EditText
+                android:id="@+id/destination_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Destination address"
+                android:inputType="text"
+                android:textSize="14sp"/>
+        <TextView
+                android:id="@+id/buttonCalculateRoute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="end"
+                android:textColor="@color/colorAccent"
+                android:text="CALCULATE ROUTE"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ImageButton
+            android:id="@+id/routeContainerButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_route"
+            android:background="@drawable/roundedbutton_with_shadow"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+    <ImageButton
+            android:id="@+id/myPositionButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_focus_on_location"
+            android:background="@drawable/roundedbutton_with_shadow"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/routeContainerButton"/>
+    <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_action_back_black"
+            android:background="@drawable/roundedbutton_with_shadow"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/myPositionButton"
+            android:visibility="gone"/>
+
+
+    <org.mapsforge.map.android.view.MapView
+            android:id="@+id/openmapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+</RelativeLayout>

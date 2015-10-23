@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shadow_container"/>
+    <item
+            android:drawable="@drawable/container"
+            android:bottom="10px"
+            android:right="10px"/>
+</layer-list>

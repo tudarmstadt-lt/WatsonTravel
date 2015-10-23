@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff6a6a6a</color>
+    <color name="colorPrimaryDark">#ff434343</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#ff6a899e</color>
+    <color name="colorCategoryRow">#e0e0e0</color>
+    <color name="mapButtonBackground">#FFFFFF</color>
+    <color name="mapButtonShadow">#643a353d</color>
+    <color name="rating">#e7711b</color>
+</resources>

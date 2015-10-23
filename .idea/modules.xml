@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TravelCorpus_App.iml" filepath="$PROJECT_DIR$/TravelCorpus_App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jars/appcompat/android-support-v7-appcompat.iml" filepath="$PROJECT_DIR$/../jars/appcompat/android-support-v7-appcompat.iml" />
+      <module fileurl="file://$USER_HOME$/Dropbox/jars/appcompat/android-support-v7-appcompat.iml" filepath="$USER_HOME$/Dropbox/jars/appcompat/android-support-v7-appcompat.iml" />
+    </modules>
+  </component>
+</project>
