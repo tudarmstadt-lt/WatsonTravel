@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             @Override
             protected List<Evidencelist> doInBackground(String... v) {
                 Question question = (Question)dbHelper.getTableItems().get(position);
-                if(v != null && v[0] != null)
+                if(v != null && v.length > 0 && v[0] != null)
                     return WatsonRequestHandler.askWatson(question.getQuestion() + " in " + v[0]).getAnswerInformation().getEvidencelist();
                 else
                     return WatsonRequestHandler.askWatson(question.getQuestion() + " in " +getCurrentCity()).getAnswerInformation().getEvidencelist();

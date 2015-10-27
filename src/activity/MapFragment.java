@@ -97,6 +97,8 @@ public class MapFragment extends AbstractFragment {
         rootView = inflater.inflate(R.layout.fragment_map, container, false);
 
         mapView = (MapView) rootView.findViewById(R.id.openmapview);
+        myLocation = createMarker(new LatLong(0,0),R.drawable.ic_action_location);
+        destinationLocation = createMarker(new LatLong(0,0), R.drawable.ic_action_destination_location);
         if(locationListener.getLocation() != null)
             updateMap(locationListener.getLocation());
 
@@ -127,8 +129,6 @@ public class MapFragment extends AbstractFragment {
         tileRendererLayer.setXmlRenderTheme(InternalRenderTheme.OSMARENDER);
 
         Layers layers = mapView.getLayerManager().getLayers();
-        myLocation = createMarker(new LatLong(0,0),R.drawable.ic_action_location);
-        destinationLocation = createMarker(new LatLong(0,0), R.drawable.ic_action_destination_location);
         layers.add(destinationLocation);
         if(map.isDirectory())
             loadGraphStorage();
@@ -278,7 +278,7 @@ public class MapFragment extends AbstractFragment {
             @Override
             protected LatLong[] doInBackground(Void... params) {
 
-                if (Settings.API_Key != null && !Settings.API_Key.isEmpty())
+                if (Settings.API_Key == null || Settings.API_Key.isEmpty())
                     return  null;
 
                 MyGeocoder myGeocoder = new MyGeocoder(Settings.API_Key);
@@ -299,7 +299,7 @@ public class MapFragment extends AbstractFragment {
                 if(myLocation.getLatLong().compareTo(start) == 0) {
                     myLocation.setLatLong(start);
                 }
-                mapView.getModel().mapViewPosition.setCenter(latLongs[1]);
+                mapView.getModel().mapViewPosition.setCenter(latLongs[0]);
                 calcPath(start.latitude,start.longitude,destination.latitude,destination.longitude);
             }
         }.execute();

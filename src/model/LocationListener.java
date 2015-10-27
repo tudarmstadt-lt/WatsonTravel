@@ -13,7 +13,7 @@ import java.util.List;
 
 public class LocationListener implements android.location.LocationListener {
     private LocationManager locationManager;
-    private Location location;
+    private static Location location;
 
     public LocationListener(Activity activity) {
         this.locationManager = (LocationManager)activity.getSystemService(Context.LOCATION_SERVICE);
