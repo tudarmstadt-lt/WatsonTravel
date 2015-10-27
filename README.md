@@ -3,6 +3,8 @@ Student project with IBM Bluemix
 
 **Travel With Watson** is an Android sightseeing app that uses the question answering system **Watson** from IBM.
 
+You can find a video of this app here: https://www.youtube.com/watch?v=Yyivo2mxv7g&feature=youtu.be
+
 ####Functionality:
 - Ask Watson for interesting places depending on the current position of the user (e.g Where can I get a drink ?) 
 - An OpenStreetMap with routing
