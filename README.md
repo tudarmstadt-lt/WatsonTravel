@@ -6,9 +6,16 @@ Student project with IBM Bluemix
 ####Functionality:
 - Ask Watson for interesting places depending on the current position of the user (e.g Where can I get a drink ?) 
 - An OpenStreetMap with routing
+  - Routing from your curren position to a editable destination point
+  - Routing between to positions
 - Text to Speech / Speech to Text
 
 For more informations how "Travel with Watson" works you can find a [documentation](https://github.com/tudarmstadt-lt/WatsonTravel/blob/master/docs/Travel_with_Watson_documentation.pdf) in die docs folder.
+
+####OpenStreetMap:
+In our project we use the OpenSource library [mapsforge](https://github.com/mapsforge/mapsforge) to display OpenStreetMap maps.
+
+For routing on maps we use the OpenSource library [graphhoppper](https://github.com/graphhopper/graphhopper).
 
 ####How to get started with "Travel with Watson":
 
