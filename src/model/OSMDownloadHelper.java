@@ -46,7 +46,7 @@ public abstract class OSMDownloadHelper extends AsyncTask<URL,Void,Void> {
         this.folderPath = filesDir;
         this.name = name;
         this.routingMap = true;
-        this.execute(generateURLFromString("http://130.83.118.129/Watson/Maps/"+name+".zip"));
+        this.execute(generateURLFromString("http://maggie.lt.informatik.tu-darmstadt.de/travelmaps/"+name+".zip"));
     }
 
     private void unzip(InputStream inputStream) {
